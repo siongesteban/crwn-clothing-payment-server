@@ -1,5 +1,5 @@
 {
-  "name": "crwn-clothing-server",
+  "name": "crwn-clothing-payment-server",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siongesteban/crwn-clothing-server.git"
+    "url": "git+https://github.com/siongesteban/crwn-clothing-payment-server.git"
   },
   "author": "Siong Esteban",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/siongesteban/crwn-clothing-server/issues"
+    "url": "https://github.com/siongesteban/crwn-clothing-payment-server/issues"
   },
-  "homepage": "https://github.com/siongesteban/crwn-clothing-server#readme",
+  "homepage": "https://github.com/siongesteban/crwn-clothing-payment-server#readme",
   "devDependencies": {
     "@types/body-parser": "^1.17.1",
     "@types/cors": "^2.8.6",
