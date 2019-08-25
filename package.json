@@ -8,7 +8,7 @@
     "dev": "concurrently npm:start:*",
     "build": "tsc",
     "start": "node build",
-    "heroku-postbuild": "npm run build"
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
