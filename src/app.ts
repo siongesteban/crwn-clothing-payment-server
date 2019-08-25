@@ -1,11 +1,15 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
 
 const app = express();
 
-app.get('/something', (req: Request, res: Response) => {
-  res.json({
-    message: 'Hola!',
-  });
-});
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(
+  cors({
+    origin: process.env.CLIENT_ORIGIN,
+  }),
+);
 
 export { app };
