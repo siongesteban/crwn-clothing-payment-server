@@ -12,6 +12,9 @@ npm i
 npm start
 ```
 
+### Stripe
+The app uses Stripe as its payment API. You can get your own `secret_key` by signing up an account.
+
 ### Environment Variables
 ```
 PORT=3001
