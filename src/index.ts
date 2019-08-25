@@ -2,6 +2,7 @@ import express, { Request, Response } from 'express';
 import Stripe from 'stripe';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import 'dotenv/config';
 
 interface Env extends NodeJS.ProcessEnv {
   CLIENT_ORIGIN: string;

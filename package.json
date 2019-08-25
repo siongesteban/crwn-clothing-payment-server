@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start:build": "tsc -w",
-    "start:run": "nodemon build --exec \"node --require 'dotenv/config'\"",
-    "start": "concurrently npm:start:*"
+    "start:watch": "tsc -w",
+    "start:dev": "nodemon build",
+    "dev": "concurrently npm:start:*",
+    "build": "tsc",
+    "start": "node build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
